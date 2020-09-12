@@ -159,7 +159,7 @@ textarea {
   /* 1 */
   font-size: 100%;
   /* 1 */
-  line-height: 1;
+  line-height: 1.15;
   /* 1 */
   margin: 0;
   /* 2 */
@@ -339,4 +339,258 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header,
+.footer {
+  background-color: #837c7c;
+  padding: 50px 0;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #f3f1f2;
+}
+
+.main__hero {
+  padding: 32px 0 38px 0;
+}
+
+.main__hero-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.main__hero-block {
+  width: 25%;
+  margin-right: 36px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  color: #566375;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  -webkit-box-shadow: 0 1px 0 #e2dee0;
+          box-shadow: 0 1px 0 #e2dee0;
+  background-color: #ffffff;
+}
+
+.main__hero-block:last-child {
+  margin-right: 0;
+}
+
+.main__hero-block:hover {
+  cursor: pointer;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  -webkit-box-shadow: 3px 2px 13px 4px #C7C7C7;
+  box-shadow: 3px 2px 13px 4px #C7C7C7;
+}
+
+.main__hero-price {
+  padding: 3px 15px;
+  border-radius: 30px;
+  background-color: #1baf5d;
+  color: #fff;
+  font-size: 15px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.main__hero-img {
+  height: 140px;
+}
+
+.main__hero-photo {
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #1baf5d;
+}
+
+.main__hero-photo-beach {
+  border-bottom: 3px solid #f19e1f;
+}
+
+.main__hero-photo-bus {
+  border-bottom: 3px solid #88499c;
+}
+
+.main__hero-icon {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main__hero-text {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 180px;
+  margin: 40px 0 10px 0;
+  font-size: 14px;
+}
+
+.main__hero-text-beach {
+  margin-bottom: 25px;
+}
+
+.main__hero-title {
+  font-size: 12px;
+  color: #1baf5d;
+  margin-bottom: 5px;
+}
+
+.main__hero-title-beach {
+  color: #f19e1f;
+}
+
+.main__hero-title-bus {
+  color: #88499c;
+}
+
+.main__hero-star {
+  width: 11px;
+}
+
+.main__hero-number {
+  color: #a7a1a1;
+}
+
+.main__hero-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__hero-body-block {
+  position: relative;
+  width: 50%;
+  background-color: #ffffff;
+  margin-right: 36px;
+  padding: 0 0 15px 0;
+}
+
+.main__hero-body-block:last-child {
+  margin-right: 0;
+}
+
+.main__hero-body-block:hover {
+  cursor: pointer;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  -webkit-box-shadow: 3px 2px 13px 4px #C7C7C7;
+  box-shadow: 3px 2px 13px 4px #C7C7C7;
+}
+
+.main__hero-body-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 97px;
+  left: 20%;
+}
+
+.main__hero-body__img {
+  height: 120px;
+}
+
+.main__hero-body__photo {
+  width: 100%;
+  height: 100%;
+}
+
+.main__hero-body-title {
+  font-size: 18px;
+  margin-right: 8px;
+  color: #fff;
+}
+
+.main__hero-body-ver {
+  border-bottom: 3px solid #1baf5d;
+}
+
+.main__hero-body-club {
+  border-bottom: 3px solid #f19e1f;
+}
+
+.main__hero-body-star {
+  width: 11px;
+  vertical-align: middle;
+}
+
+.main__hero-about-number {
+  color: #fff;
+  font-size: 12px;
+}
+
+.main__hero-body-icon {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+}
+
+.main__hero-body__person {
+  padding: 20px 5px 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__hero-body-face {
+  margin: 32px 20px 0;
+}
+
+.main__hero-body-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 7px;
+}
+
+.main__hero-body-text {
+  color: #566375;
+}
+
+.main__hero-body__about_stars {
+  margin-bottom: 17px;
+}
+
+.main__hero-about-star {
+  width: 17px;
 }
