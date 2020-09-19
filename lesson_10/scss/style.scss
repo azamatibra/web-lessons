@@ -2,19 +2,19 @@
 
 @font-face {
   font-family: "Avenir";
-  src: url("/fonts/Avenir-Light.woff") format("woff");
+  src: url("/fonts/Avenir/Avenir-Light.woff") format("woff");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Avenir";
-  src: url("/fonts/Avenir-Roman.woff") format("woff");
+  src: url("/fonts/Avenir/Avenir-Roman.woff") format("woff");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Avenir";
-  src: url("/fonts/Avenir-Black.woff") format("woff");
+  src: url("/fonts/Avenir/Avenir-Black.woff") format("woff");
   font-weight: 700;
 }
 
@@ -134,7 +134,8 @@
     margin-left: 120px;
     text-transform: uppercase;
     letter-spacing: -0.04px;
-    max-width: 370px;
+    max-width: 400px;
+    overflow: hidden;
   }
 
   &__create {
@@ -184,7 +185,7 @@
 
   &__text {
     color: #cccccc;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 300;
     letter-spacing: -0.42px;
   }
