@@ -1,1 +1,191 @@
 @import "nullstyle";
+.wrapper {
+  font-family: sans-serif;
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.form {
+  &__wrap {
+    font-size: 15px;
+  }
+  &__setting {
+    padding: 25px 50px;
+    border: 3px solid #000;
+    margin-top: 50px;
+    position: relative;
+  }
+  &__map {
+  }
+  &__setting-title {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #ffffff;
+    padding: 0 5px;
+  }
+  &__biometry {
+  }
+
+  &__group {
+    margin-bottom: 20px;
+  }
+
+  &__name-label {
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  &__name {
+    padding: 5px;
+  }
+
+  &__input {
+    border: 3px solid #000;
+    padding: 3px;
+    &::placeholder {
+      color: #000;
+      font-size: 15px;
+    }
+  }
+  &__part {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    width: 45%;
+  }
+
+  &__hair {
+  }
+
+  &__color-label,
+  &__rise-label,
+  &__hair-label {
+    margin-right: 20px;
+  }
+  &__color {
+    padding: 2px;
+    border: 2px solid #000;
+    background-color: transparent;
+  }
+  &__rise {
+  }
+
+  &__info {
+  }
+  &__heft {
+    text-align: right;
+    width: 90px;
+  }
+  &__heft-label {
+    margin-right: 50px;
+  }
+  &__work {
+  }
+
+  &__work-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  &__work-label {
+  }
+
+  &__company-input {
+    width: 70%;
+  }
+
+  &__work-block {
+  }
+  &__work-hr {
+    padding-bottom: 30px;
+    position: relative;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      border: 1px solid #000;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__work-start,
+  &__work-finish {
+    margin-right: 20px;
+  }
+
+  &__work-start-input {
+  }
+
+  &__work-finish {
+  }
+
+  &__work-finish-input {
+  }
+
+  &__more {
+  }
+
+  &__more-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  &__more-title {
+    margin-bottom: 15px;
+  }
+  &__more-advanced {
+    margin-bottom: 30px;
+  }
+  &__more-title {
+  }
+  &__more-text {
+    min-height: 200px;
+    width: 100%;
+    resize: vertical;
+    border: 2px solid #000;
+    padding: 5px;
+    &::placeholder {
+      font-size: 15px;
+      color: #000000;
+    }
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn {
+    color: #000;
+    font-size: 15px;
+    border: 2px solid #000;
+    background-color: transparent;
+    padding: 5px 10px;
+    &:hover{
+    transition: .2s ease;
+      background-color: #000;
+      color: #ffffff;
+    }
+  }
+  &__submit {
+    margin-right: 30px;
+  }
+}

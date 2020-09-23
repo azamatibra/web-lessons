@@ -1,1 +1,107 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson_13</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="form__wrap">
+        <form action="#" enctype="multipart/form-data">
+          <div class="form__setting form__map">
+            <div class="form__setting-title">Биометрия</div>
+            <div class="form__group">
+              <label for="form__name" class="form__name-label">ФИО</label>
+              <input class="form__name form__input" name="form__name" id="form__name" placeholder="Ваше имя"
+                type="text">
+            </div>
+            <div class="form__group">
+              <label for="form__date" class="form__name-label">Дата рождения</label>
+              <input class="form__name form__input" name="form__date" id="form__date" placeholder="дд.мм.гг"
+                type="text">
+            </div>
+            <div class="form__part">
+              <div class="form__group form__info">
+                <label for="form__hair" class="form__hair-label">Цвет Волос</label>
+                <input type="color" id="form__hair" name="form__hair" class="form__input form__hair">
+              </div>
+              <div class="form__group form__info">
+                <label class="form__color-label">Цвет Кожи</label>
+                <select name="form__color" class="form__color">
+                  <option value="Черный">Черный</option>
+                  <option value="Желтый">Желтый</option>
+                  <option value="Коричневый">Коричневый</option>
+                  <option value="Рыжий">Рыжий</option>
+                </select>
+              </div>
+              <div class="form__group form__info">
+                <label for="form__rise" class="form__rise-label">Рост</label>
+                <input type="range" name="form__rise" id="form__rise" class="form__input form__rise">
+              </div>
+              <div class="form__group form__info">
+                <label class="form__heft-label">Вес</label>
+                <input type="number" name="heft" value="75" class="form__input form__heft">
+              </div>
+            </div>
+          </div>
+          <div class="form__setting form__work">
+            <div class="form__setting-title">Место работы</div>
+            <div class="form__work-info">
+              <label for="form__company-input" class="form__work-label">Название компании</label>
+              <input type="text" class="form__input form__company-input" id="form__company-input">
+            </div>
+            <div class="form__work-info form__work-hr">
+              <div class="form__work-block">
+                <label class="form__work-start">Дата начала</label>
+                <input type="date" class="form__input form__work-start-input">
+              </div>
+              <div class="form__work-block">
+                <label class="form__work-finish">Дата конца</label>
+                <input type="date" class="form__input form__work-finish-input">
+              </div>
+            </div>
+            <div class="form__work-info">
+              <label for="form__work-name-input" class="form__work-label">Название компании</label>
+              <input type="text" class="form__input form__company-input" id="form__work-name-input">
+            </div>
+            <div class="form__work-info form__work-hr">
+              <div class="form__work-block">
+                <label class="form__work-start">Дата начала</label>
+                <input type="date" class="form__input form__work-start-input">
+              </div>
+              <div class="form__work-block">
+                <label class="form__work-finish">Дата конца</label>
+                <input type="date" class="form__input form__work-finish-input">
+              </div>
+            </div>
+          </div>
+          <div class="form__setting form__more">
+            <div class="form__setting-title">Дополнительные данные</div>
+            <div class="form__more-block">
+              <label for="" class="form__more-title">Ваше фото</label>
+              <input name="form__file" type="file">
+            </div>
+            <div class="form__more-advanced">
+              <div class="form__more-title">Дополнительная информация</div>
+              <textarea name="form__more-text" class="form__more-text" placeholder="Введите вашу информацию"></textarea>
+            </div>
+            <div class="form__buttons">
+              <button class="form__btn form__submit" type="submit">Отправить</button>
+              <button class="form__btn" type="reset">Сбросить</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+  font-family: sans-serif;
 }
 
 *,
@@ -87,8 +88,4 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
-}
-
-.item {
-  color: red;
 }
