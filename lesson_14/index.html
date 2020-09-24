@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson_13</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="nav__block">
+          <div class="nav__img">
+            <img src="img/cart.svg" alt="number" class="nav__photo">
+          </div>
+          <div class="nav__text">CART</div>
+        </a>
+        <a href="#" class="nav__block">
+          <div class="nav__img">
+            <img src="img/cart.svg" alt="number" class="nav__photo">
+          </div>
+          <div class="nav__text">PAYMENT</div>
+        </a>
+        <a href="#" class="nav__block">
+          <div class="nav__img">
+            <img src="img/delivery.svg" alt="number" class="nav__photo">
+          </div>
+          <div class="nav__text">DELIVERY</div>
+        </a>
+        <a href="#" class="nav__block">
+          <div class="nav__img">
+            <img src="img/done.svg" alt="number" class="nav__photo">
+          </div>
+          <div class="nav__text nav__text--active">DONE</div>
+        </a>
+      </nav>
+
+      <main class="main">
+        <form action="#">
+          <div class="main__wrap">
+            <div class="main__info">
+              <div class="main__info-title main-title">CONTACT INFORMATION</div>
+              <div class="main__group">
+                <input type="text" name="first_name" class="main__info-input main__info-aside main__info-input-adv"
+                  placeholder="First Name">
+                <input type="text" name="last_name" class="main__info-input-adv  main__info-input"
+                  placeholder="Last Name">
+              </div>
+              <div class="main__group">
+                <input type="text" name="phone" class=" main__info-input-adv main__info-input main__info-aside "
+                  placeholder="Phone">
+                <input type="text" name="email" class="main__info-input-adv  main__info-input" placeholder="Email">
+              </div>
+              <div class="main__group">
+                <select name="country" class="main__info-input main__info-select main__info-aside main__info-address">
+                  <option value="Кыргызстан">Кыргызстан</option>
+                  <option value="Россия">Россия</option>
+                  <option value="Польша">Польша</option>
+                </select>
+                <input type="text" name="city" class="main__info-input main__info-aside main__info-address"
+                  placeholder="City">
+                <input type="text" name="Zip Code" class="main__info-input main__info-address" placeholder="Zip Code">
+              </div>
+              <div class="main__group">
+                <input type="text" name="state" class=" main__info-input-adv main__info-input main__info-aside "
+                  placeholder="State">
+                <input type="text" name="Address" class="main__info-input-adv  main__info-input" placeholder="Address">
+              </div>
+            </div>
+            <div class="main__method">
+              <div class="main__method-title main-title">SHIPPING METHOD</div>
+              <div class="main__method-block">
+                <div class="main__method-payment">
+                  <div class="main__method-inner">
+                    <input type="radio" name="radio" class="method-price-1 main__method-radio">
+                    <div class="main__method-text">Standart (4 weeks)</div>
+                  </div>
+                  <div class="main__method-price main__price-1">$9</div>
+                </div>
+              </div>
+              <div class="main__method-block">
+                <div class="main__method-payment">
+                  <div class="main__method-inner">
+                    <input type="radio" name="radio" class="method-price-2 main__method-radio">
+                    <div class="main__method-text">Express (5 days)</div>
+                  </div>
+                  <div class="main__method-price main__price-2">$20</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__buttons">
+            <button class="main__payment">Back to Payment</button>
+            <button class="main__payment main__done main__active">DONE</button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+  </div>
+</body>
+
+</html>
