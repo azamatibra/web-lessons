@@ -1,1 +1,83 @@
 @import "nullstyle";
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 615px;
+  margin: 0 auto;
+}
+.wrap {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.btn {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+  transition: 0.2s ease;
+
+  &__cancel {
+    padding: 14px 38px;
+    color: #535353;
+    font-size: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+    background-color: #ffffff;
+    &:hover {
+      background-color: #000;
+      color: #ffffff;
+    }
+  }
+
+  &__confirm {
+    padding: 14px 35px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+    background-color: #448aff;
+    color: #ffffff;
+    &:hover {
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.35);
+      color: #448aff;
+      background-color: #fff;
+    }
+    &:active {
+      box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.35);
+    }
+  }
+  &__send {
+    background: linear-gradient(40deg, #e91e63 50%, #c2185b 50%);
+    padding: 20px 52px;
+    border-radius: 26px;
+    background-color: #e91e63;
+  }
+  &__buy {
+    padding: 20px 35px;
+    color: #703f00;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    background-image: linear-gradient(to top, #ff8400 0%, #ffba00 100%);
+    position: relative;
+    border-radius: 34px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 8px solid #fff;
+      border-radius: 34px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+    }
+  }
+}
