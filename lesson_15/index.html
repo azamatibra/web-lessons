@@ -4,24 +4,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet">
-
   <link rel="stylesheet" href="css/style.css">
   <title>Lesson_13</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="wrap">
-      <div class="block">
-        <a href="#" class="btn btn__cancel">Отмена</a>
-        <a href="#" class="btn btn__confirm">Подтвердить</a>
-        <a href="#" class="btn btn__send">Отправить</a>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__logo">
+            <div class="header__logo-icon">
+              <img class="header__img" src="img/logo.webp" alt="logo">
+            </div>
+            <div class="header__logo-title">
+              Maguwo<span class="header__logo-text">Host</span>
+            </div>
+          </div>
+          <nav class="header__nav header__nav-border">
+            <a href="#" class="header__link header__link-active">Home</a>
+            <a href="#" class="header__link">About</a>
+            <a href="#" class="header__link">Pricing</a>
+            <a href="#" class="header__link">Domain</a>
+            <a href="#" class="header__link">Hosting</a>
+          </nav>
+          <div class="header__inner">
+            <a href="#" class="header__help">Do you need help ? Just Email, Live chat or Call us</a>
+            <div class="header__info">
+              <button class="btn header__chat">Live Chat</button>
+              <div class="header__number">6284-6534</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="block">
-        <a href="#" class="btn btn__buy">Купить</a>
+    </header>
+    <section class="hosting">
+      <div class="container">
+        <h1 class="hosting__title">Just a Proffesional Web Hosting Services</h1>
+        <span class="hosting__text">modern - fast - reliable</span>
+        <figure class="hosting__icon">
+          <img src="img/hosting-icon.svg" alt="hosting-icon">
+        </figure>
+        <form action="#" class="hosting-form">
+          <div class="hosting__form">
+            <input type="text" class="hosting__name hosting__field" placeholder="Your Domain Name ...">
+            <span class="hosting__select">
+              <select class="hosting__field hosting__domain">
+                <option value="ru">ru</option>
+                <option value="kg">kg</option>
+                <option value="kz">kz</option>
+                <option value="info">info</option>
+              </select>
+            </span>
+            <button class="hosting__button">Check Availability</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="service">
+      <div class="service__box service__dark">
+        <div class="service__wrap">
+          <div class="service__icon">
+            <img src="img/web-img.svg" alt="service__img">
+          </div>
+          <div class="service__title">#1 Webhost Services</div>
+          <div class="service__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+            aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
+            id
+            elit.</div>
+          <div class="service__button">More</div>
+        </div>
+      </div>
+      <div class="service__box service__light">
+        <div class="service__wrap">
+          <div class="service__icon service__icon_light">
+            <img src="img/domain-img.png" alt="service__img">
+          </div>
+          <div class="service__title">#1 Domain Services</div>
+          <div class="service__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+            aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
+            id
+            elit.</div>
+          <div class="service__button">More</div>
+        </div>
       </div>
     </div>
   </div>
