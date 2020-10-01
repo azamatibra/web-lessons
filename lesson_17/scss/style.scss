@@ -1,0 +1,243 @@
+@import "nullstyle";
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  animation: sunSet 4s ease-in-out 1.5s forwards,
+    sunSet 4s ease-in-out 16s forwards 1 reverse;
+  background: rgba(186, 228, 244, 1);
+}
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.sun {
+  animation: sunshine 3s linear infinite, sunMove 12s ease-in-out forwards 1,
+    sunMove 12s ease-in-out 12s 1 reverse;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 100px;
+  height: 100px;
+  background: #f1c40f;
+  border-radius: 50%;
+  z-index: -5;
+}
+.moon {
+  animation: moonMove 11s ease-in-out forwards 1,
+    moonMove 11s ease-in-out 11s forwards 1 reverse;
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  background: transparent;
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
+  box-shadow: -1.5em 1em 0 0.5em white,
+    -3em 1.5em 1.5em rgba(255, 255, 255, 0.3);
+  z-index: -5;
+}
+
+.mountain-1,
+.mountain-2 {
+  background: #baa39a;
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  bottom: -350px;
+  border-radius: 40px;
+  left: 150px;
+  z-index: -2;
+}
+.mountain-2 {
+  background: rgba(185, 160, 150, 0.7);
+  left: 450px;
+  bottom: -400px;
+  z-index: -3;
+}
+
+.hill {
+  position: absolute;
+  bottom: 15%;
+  right: 0;
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 160%;
+  border-top-left-radius: 100%;
+  background-color: #adde60;
+  z-index: -1;
+}
+.hill:after {
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  right: -400px;
+  width: 120%;
+  height: 110%;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 0%;
+  background-color: #94c943;
+  -moz-transform: rotate(-12deg);
+  -webkit-transform: rotate(-12deg);
+  box-shadow: 0 0 25px #cbf191 inset;
+}
+.hill:before {
+  background-color: #93cc3a;
+  border-top-left-radius: 0;
+  border-top-right-radius: 100%;
+  bottom: -70px;
+  content: "";
+  height: 110%;
+  left: -54px;
+  position: absolute;
+  transform: rotate(4deg);
+  width: 80%;
+}
+
+.street {
+  background: #7a7a7a;
+  height: 120px;
+  width: 102%;
+  position: absolute;
+  bottom: 0;
+}
+.street:before,
+.street:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background: #cdbcb4;
+  bottom: 0;
+  z-index: 1;
+}
+.street:before {
+  top: -10px;
+}
+
+.street-stripe {
+  background: #d4d4d4;
+  height: 8px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 2px;
+  box-shadow: 200px 0 0 #d4d4d4, 400px 0 0 #d4d4d4, 600px 0 0 #d4d4d4,
+    800px 0 0 #d4d4d4, 1000px 0 0 #d4d4d4, 1200px 0 0 #d4d4d4,
+    1400px 0 0 #d4d4d4, 1600px 0 0 #d4d4d4, 1800px 0 0 #d4d4d4,
+    2000px 0 0 #d4d4d4;
+}
+
+.car {
+  position: absolute;
+  bottom: 90px;
+  width: 200px;
+  z-index: 5;
+}
+.car1 {
+  animation: carMove 3s linear .2s 10;
+}
+.car2 {
+  animation: carMove 2s linear 5s 10;
+  left: -25%;
+  bottom: 40px;
+}
+.car:before,
+.car:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  background: url(../img/wheel.png) no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  transform: rotate(0);
+  animation: carRotateWhell .5s linear infinite; 
+}
+.car:before {
+  left: 25px;
+}
+.car:after {
+  right: 25px;
+}
+.car__img {
+  max-width: 100%;
+}
+
+@keyframes sunshine {
+  0% {
+    box-shadow: 0 0 0 0 rgba(241, 196, 15, 0.7), 0 0 0 0 rgba(241, 196, 15, 0.7);
+  }
+  40% {
+    box-shadow: 0 0 0 50px rgba(241, 196, 15, 0),
+      0 0 0 0 rgba(241, 196, 15, 0.7);
+  }
+  80% {
+    box-shadow: 0 0 0 50px rgba(241, 196, 15, 0),
+      0 0 0 30px rgba(241, 196, 15, 0);
+  }
+}
+@keyframes sunMove {
+  from {
+    top: 60px;
+    left: 60px;
+  }
+  to {
+    top: 80%;
+    left: 60%;
+  }
+}
+@keyframes moonMove {
+  from {
+    top: 100%;
+    left: 30%;
+  }
+  to {
+    top: 60px;
+    left: calc(100% - 150px);
+  }
+}
+@keyframes sunSet {
+  0% {
+    background: rgba(186, 228, 244, 1);
+  }
+  75% {
+    background: rgba(241, 196, 15, 0.5);
+  }
+  80% {
+    background: rgba(243, 156, 18, 1);
+  }
+  90% {
+    background: rgba(230, 126, 34, 1);
+  }
+  100% {
+    background: #08082b;
+  }
+}
+@keyframes carMove {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(1000%);
+  }
+}
+@keyframes carRotateWhell {
+  from {
+    transform: rotate(deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
