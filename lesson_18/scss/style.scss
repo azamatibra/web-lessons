@@ -147,7 +147,7 @@
     padding-right: 20px;
     @media (max-width: 786px) {
       flex-direction: column;
-      padding-top: 80px;
+      justify-content: center;
       position: fixed;
       top: -100%;
       width: 100%;
