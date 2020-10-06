@@ -4,11 +4,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <title>Lesson_13</title>
+  <title>Lesson_18</title>
 </head>
 
 <body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__info">
+        <div class="container header__container">
+          <div class="header__inner">
+            <div class="logo header__logo">
+              <img class="header__logo-img" src="img/WAPIK.png" alt="wapik">
+            </div>
+            <div class="header__number">
+              <img src="img/phone.png" alt="phone" class="header__number-img">
+              <span class="header__number-text">+62 202 555 0117</span>
+            </div>
+          </div>
+          <div class="header__burger">
+            <span class="header__burger-line"></span>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a href="#" class="header__list-link">Home</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__list-link">About Us</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__list-link">pricing</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__list-link">Contact Us</a>
+              </li>
+            </ul>
+            <button class="btn header__btn">
+              Get Started
+            </button>
+          </nav>
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="container">
+          <h1 class="header__caption">Welcome to Wapik</h1>
+          <p class="header__text">Wapik is multipurpose template, with modern and smart design. Wapik is perfect
+            template for you!</p>
+          <button class="btn header__more-btn">Learn More</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="feature">
+      <div class="container feature__container">
+        <div class="feature__inner">
+          <h1 class="feature__title">Best of our features</h1>
+          <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+        </div>
+        <div class="feature__blocks">
+          <div class="feature__block">
+            <div class="feature__block-img">
+              <img src="img/feature-1.png" alt="feature" class="feature__block-photo">
+            </div>
+            <div class="feature__block-info">Ionicons</div>
+            <div class="feature__block-desc">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+              Aenean eu leo quam. Pellentesque ornare sem.</div>
+          </div>
+          <div class="feature__block">
+            <div class="feature__block-img">
+              <img src="img/feature-2.png" alt="feature" class="feature__block-photo">
+            </div>
+            <div class="feature__block-info">Creative Idea</div>
+            <div class="feature__block-desc">Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel
+              scelerisque nisl consectetur et.</div>
+          </div>
+          <div class="feature__block">
+            <div class="feature__block-img">
+              <img src="img/feature-3.png" alt="feature" class="feature__block-photo">
+            </div>
+            <div class="feature__block-info">Photoshop and Sketch</div>
+            <div class="feature__block-desc">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed
+              diam eget risus varius blandit sit amet non magna..</div>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__item">
+            <div class="service__inner">
+              <img src="img/service-1.png" alt="service" class="service__img">
+              <span class="service__title">Cross Browser Compatibility</span>
+            </div>
+            <p class="service__desc">Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta
+              gravida at eget metus.</p>
+          </div>
+          <div class="service__item">
+            <div class="service__inner">
+              <img src="img/service-2.png" alt="service" class="service__img">
+              <span class="service__title">Cross Browser Compatibility</span>
+            </div>
+            <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta
+              felis euismod semper.</p>
+          </div>
+          <div class="service__item">
+            <div class="service__inner">
+              <img src="img/service-3.png" alt="service" class="service__img">
+              <span class="service__title">Pixel Perfect</span>
+            </div>
+            <p class="service__desc">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="service__item">
+            <div class="service__inner">
+              <img src="img/service-4.png" alt="service" class="service__img">
+              <span class="service__title">Free Forever and Ever</span>
+            </div>
+            <p class="service__desc">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi
+              porta gravida at eget metus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $(".header__burger").click(function (event) {
+        $(".header__burger, .header__nav").toggleClass("active")
+      })
+    })
+  </script>
 
 </body>
 
