@@ -132,10 +132,10 @@
         <div class="news__inner">
           <span class="news__subscribe">Subscribe to our Newsletter</span>
           <p class="news__desc">Available exclusivery on Figmaland</p>
-          <div class="news__form">
-            <input type="text" class="form__input news__email" placeholder="Your Email">
+          <form action="#" class="news__form">
+            <input name="newsName" type="text" class="form__input news__email" placeholder="Your Email">
             <button class="btn header__btn news__btn">Subscribe</button>
-          </div>
+          </form>
         </div>
       </div>
     </section>
@@ -285,13 +285,13 @@
           designed for teams. </p>
       </div>
       <div class="contact__inner">
-        <div class="contact__info">
+        <form action="#" class="contact__info">
           <h2 class="contact__desc">Contact Us</h2>
-          <input type="text" class="form__input contact__name" placeholder="Your Name">
-          <input type="text" class="form__input contact__email" placeholder="Your Email">
-          <textarea class="form__input contact__message" placeholder="Your Message"></textarea>
+          <input type="text" name="contactName" class="form__input contact__name" placeholder="Your Name">
+          <input type="text" name="contactEmail" class="form__input contact__email" placeholder="Your Email">
+          <textarea name="contactText" class="form__input contact__message" placeholder="Your Message"></textarea>
           <button class="btn header__btn contact__btn">Send</button>
-        </div>
+        </form>
         <div class="contact__body">
           <div class="contact__advanced">
             <div class="contact__advanced-block">
@@ -338,7 +338,7 @@
       </div>
     </section>
     <footer class="footer">
-     <div class="footer__wrap">
+      <div class="footer__wrap">
         <nav class="footer__nav">
           <div class="footer__block">
             <h2 class="footer__title">Pages</h2>
@@ -392,7 +392,7 @@
             </a>
           </div>
         </div>
-     </div>
+      </div>
     </footer>
   </div>
 
