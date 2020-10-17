@@ -1,0 +1,64 @@
+.custom {
+  &__title {
+    text-align: center;
+    line-height: 1.2;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 22px;
+    color: #444444;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 14px;
+    color: #444;
+  }
+  &__text {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #666666;
+  }
+  &__desc {
+  }
+  &__link {
+  }
+
+}
+.info {
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 1.2;
+  }
+  &__text {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    color: #e3e3e3;
+    line-height: 1.2;
+  }
+}
+.btn {
+  transition: .2s;
+  display: inline-block;
+  font-family: Montserrat;
+  font-size: 14px;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 40px;
+  border: 2px solid transparent;
+}
+.wrapper {
+  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  max-width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
