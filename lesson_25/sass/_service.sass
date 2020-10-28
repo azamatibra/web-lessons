@@ -1,0 +1,31 @@
+.service
+  padding: rem(90px) 0 rem(120px) 0
+  @media (max-width: 950px)
+    padding: rem(20px) 0
+  &__container
+    +flex(center, space-between)
+    @media (max-width: 950px)
+      +flex(center, center)
+      flex-wrap: wrap
+
+  &__item
+    max-width: 322px
+    text-align: center
+
+  &__img-wrap
+    margin-bottom: -35px
+    @media (max-width: 480px)
+      max-width: 200px
+      margin: 0 auto
+      margin-bottom: -20px
+
+  &__title
+    margin-bottom: rem(15px)
+    color: $text-color-gray
+    font-size: rem(25px)
+
+  &__text
+    color: #8c8c8c
+    font-family: $font-text_b
+    font-size: rem(17px)
+    line-height: 1.5

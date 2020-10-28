@@ -1,0 +1,69 @@
+.grade
+  +flex()
+  @media (max-width: 950px)
+    flex-direction: column
+    &--rev
+      flex-direction: column-reverse
+  &__img
+    +flex(center, center)
+    padding: rem(90px)
+    background-color: #eeeeee
+    width: 50%
+    @media (max-width: 950px)
+      padding: rem(50px)
+      width: 100%
+    &--size
+      padding: rem(143px) rem(74px)
+    @media (max-width: 950px)
+      padding: rem(50px)
+
+  &__img-wrap
+    max-width: 572px
+    margin-left: auto
+    @media (max-width: 950px)
+      margin-left: 0
+    &--pos
+      margin: 0 auto 0 0
+    @media (max-width: 950px)
+      margin-right: 0
+  &__body
+    padding: rem(130px) rem(40px) rem(94px) rem(94px)
+    width: 50%
+    @media (max-width: 950px)
+      width: 100%
+      padding: rem(70px)
+    @media (max-width: 480px)
+      padding: rem(20px)
+
+  &__inner
+    max-width: 522px
+    margin-right: auto
+    @media (max-width: 950px)
+      margin: 0 auto
+    @media (max-width: 480px)
+      +flex(null, center)
+      flex-direction: column 
+
+    &--pos
+      margin: 0 0 0 auto
+      @media (max-width: 950px)
+        margin: 0 auto
+  &__title
+    color: $text-color-gray
+    font-family: $font-title
+    font-size: rem(36px)
+    font-weight: 500
+    margin-bottom: rem(46px)
+
+  &__text
+    color: #8c8c8c
+    font-family: $font-text
+    font-size: rem(17px)
+    line-height: 1.5
+    margin-bottom: rem(40px)
+
+  &__btn
+    font-weight: 600
+    padding: rem(16px) rem(43px)
+    &:hover
+      border-color: $accent-color

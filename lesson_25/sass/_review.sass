@@ -1,0 +1,86 @@
+.review
+  padding-bottom: rem(100px)
+  @media (max-width: 950px)
+    padding: rem(100px) 0
+  &__container
+    +flex(null, space-between)
+    @media (max-width: 950px)
+      +flex(center, center)
+      flex-direction: column
+
+  &__wrap
+    margin-top: rem(42px)
+    max-width: 539px
+    text-align: center
+
+  &__text
+    color: $text-color-gray
+    font-family: $font-text
+    font-size: rem(18px)
+    font-style: italic
+    line-height: 1.7
+    margin-bottom: rem(18px)
+
+  &__author
+    color: $text-color-orange
+    font-family: $font-text_b
+    margin-bottom: rem(30px)
+
+  &__dots
+    +flex(center, center)
+
+  &__oval
+    margin-right: rem(10px)
+    &:last-child
+      margin-right: 0
+
+.admission
+  padding: rem(50px) rem(46px)
+  transform: translateY(-100px)
+  border-radius: 15px
+  text-align: center
+  background-color: $accent-color
+  box-shadow: 0 -11px 0 0  #183251
+  @media (max-width: 950px)
+    transform: translateY(0)
+  @media (max-width: 480px)
+    padding: rem(50px) rem(20px)
+
+  &_form
+
+  &__title
+    color: $light-text
+    font-family: $font-text_b
+    font-size: rem(30px)
+    letter-spacing: -0.6px
+    margin-bottom: rem(43px)
+    +line_design()
+
+  &__text
+    color: $light-text
+    margin-bottom: rem(14px)
+    font-family: $font-text_b
+    font-size: rem(20px)
+    opacity: .5
+    letter-spacing: -0.4px
+
+  &__group
+    +flex(null, space-between)
+    background-color: $light-text
+    border-radius: 23px
+    overflow: hidden
+
+  &__input
+    padding: rem(15px) rem(22px) rem(15px) rem(30px)
+    &::placeholder
+      color: #a9a5a5
+      font-family: $font-text_b
+      font-size: rem(13px)
+      letter-spacing: 0.39px
+
+  &__img
+
+  &__button
+    padding: rem(12px) rem(20px)
+    border-radius: 0 23px 23px 0
+    background-color: #1f3148
