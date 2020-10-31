@@ -1,0 +1,132 @@
+.header
+  position: relative
+  height: 100vh
+  padding-bottom: rem(39px)
+  background: url("../img/banner.png") no-repeat 0 0 / cover
+  position: relative
+
+  &__wrap
+
+  &__top
+    +flex(center, space-between)
+    padding: rem(20px) rem(0px) rem(25px) rem(17px)
+    background-color: var(--color-base)
+    margin-bottom: rem(200px)
+    @media (max-width: 786px)
+      padding-right: rem(17px)
+      margin-bottom: rem(150px)
+    @media (max-width: 480px)
+      margin-bottom: rem(100px)
+
+  &__logo
+
+  &__inner
+    transition: .2s ease
+    +flex(flex-end, center)
+    flex-direction: column
+    @media (max-width: 786px)
+      +flex(center, center)
+      position: absolute
+      width: 100%
+      height: 100%
+      top: -100%
+      left: 0
+      z-index: 2
+      background-color: #fff
+      &.is-active
+        top: 0
+
+  &__part
+    transform: translateX(13px)
+    min-width: 309px
+    padding: rem(7px) rem(12px)
+    +flex(center, space-between)
+    background-color: var(--bg-color, #76b2c3)
+    margin-bottom: rem(28px)
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      top: 0
+      right: 0
+      width: 13px
+      height: 50px
+      background: url("../img/search_cp.png") no-repeat
+      opacity: 1
+      @media (max-width: 786px)
+        display: none
+    &-inner
+
+    &-link
+      color: var(--color-base)
+      font-weight: 500
+      font-size: $font-size
+      position: relative
+      padding-right: rem(10px)
+      margin-right: rem(10px)
+      &:after
+        content: ""
+        position: absolute
+        top: 0
+        right: 0
+        width: 1px
+        height: 100%
+        background-color: var(--color-base)
+      &:last-child
+        &::after
+          width: 0
+
+  &__search
+
+  &__menu
+    padding-right: rem(17px)
+    @media (max-width: 786px)
+      padding-right: 0
+      +flex(center, center)
+      flex-direction: column
+
+    &-link
+      font-size: rem(15px)
+      text-transform: uppercase
+      margin-right: rem(42px)
+      color: #6d893c
+      &:hover
+        color: #4999af
+      &:last-child
+        margin-right: 0
+      @media (max-width: 786px)
+        margin-right: 0
+        margin-bottom: rem(15px)
+
+  &__bottom
+    padding: rem(20px)
+    max-width: 459px
+    background-color: var(--bg-color, #4291a7)
+
+  &__text
+    color: var(--color-base)
+    font-size: rem(34px)
+    font-weight: 300
+    line-height: 1.2
+
+  &__fw
+    font-weight: 600
+  &__arrows
+    position: absolute
+    width: 100%
+    transform: translateY(-50%)
+    top: 50%
+    left: 0
+    +flex(center, space-between)
+    @media (max-width: 1200px)
+      transform: translateY(0)
+      top: 85%
+  &__arrow
+    +flex(center, center)
+    padding: rem(25px) rem(20px) rem(25px) rem(14px)
+    background-color: #6a6c6b
+
+  &__prev
+
+  &__next
+    transform: rotate(180deg)
