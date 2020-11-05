@@ -1,0 +1,39 @@
+.feature
+  padding: rem(100px) 0
+  color: var(--color-blue)
+
+  &__info
+    max-width: 660px
+    margin: 0 auto
+
+  &__title
+    font-weight: 600
+    font-size: rem(36px)
+    margin-bottom: rem(20px)
+
+  &__text
+    font-size: rem(18px)
+    line-height: 1.2
+    color: var(--color-blue)
+    margin-bottom: rem(100px)
+    @media (max-width: 786px)
+      margin-bottom: rem(70px) 
+
+  &__box
+    +flex(start, null)
+    @media (max-width: 992px)
+      +flex(center, center)
+      flex-direction: column
+    @media (max-width: 768px)
+      margin-bottom: rem(30px)
+  &__inner
+    margin-left: rem(20px)
+    @media (max-width: 992px)
+      text-align: center
+      margin: rem(15px) 0 0 0
+  &__type
+    font-weight: 600
+    margin-bottom: rem(15px)
+
+  &__desc
+    line-height: 1.2

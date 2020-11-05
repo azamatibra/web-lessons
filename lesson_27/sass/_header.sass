@@ -1,0 +1,67 @@
+.header
+.top
+  padding: rem(15px) 0
+  background-color: var(--accent-color)
+  position: relative
+  text-align: center
+  &::after
+    content: ""
+    width: 100%
+    height: 1px
+    position: absolute
+    bottom: 0
+    left: 0
+    background: #E6E9ED
+
+.address
+  margin-bottom: 0
+
+  &__link
+    margin-right: 30px
+    &:last-child
+      margin-right: 0
+  &__icon
+    vertical-align: middle
+    margin-right: rem(2px)
+
+  &__desc
+    font-size: rem(14px)
+    color: var(--color)
+    font-style: normal
+
+.social
+  +flex(center, center)
+  @media (max-width: 575px)
+    margin-top: rem(20px)
+  &__link
+    margin-right: 20px
+    &:last-child
+      margin-right: 0
+.navbar
+  margin: rem(50px) 0
+  &-brand
+    margin-right: rem(69px)
+  &-nav
+    @media (max-width: 992px)
+      margin: rem(15px) 0
+
+.nav
+  &-link-search
+    text-transform: uppercase
+    color: var(--color-blue)
+    margin-right: rem(50px)
+    &:last-child
+      margin-right: 0
+    @media (max-width: 1200px)
+      margin-right: rem(30px)
+    @media (max-width: 992px)
+      margin-right: 0
+.search
+  background: var(--accent-color)
+  border-radius: 14.5px
+  .input-group-text, .form-control
+    background: none
+    border: none
+  .form-control
+    font-size: rem(12px)
+    color: rgba(80, 106, 133, 0.5)
