@@ -1,0 +1,24 @@
+@function rem($px)
+  @return $px / $font-size + 0rem
+=flex($aic: null, $js: null)
+  display: flex
+  align-items: $aic
+  justify-content: $js
+
+=line_design($width: 30%,$height: 1px, $bg: #fff)
+  position: relative
+  &::before
+    content: ""
+    bottom: -10px
+    left: 50%
+    transform: translateX(-50%)
+    position: absolute
+    width: $width
+    height: $height
+    background-color: $bg
+=items 
+  @for $i from 1 through 16
+    &:nth-child(#{$i})
+      border: 1px solid var(--color-blue)
+      
+     

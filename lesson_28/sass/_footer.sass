@@ -1,0 +1,23 @@
+.footer
+  padding: rem(47px) 0
+  &__container
+    max-width: 570px
+    +flex(center, center)
+    @media (max-width: 580px)
+      +flex(center, center)
+      flex-direction: column 
+  &__logo
+    margin-right: rem(50px)
+    @media (max-width: 580px)
+      margin-right: 0
+      margin-bottom: rem(30px) 
+  &__nav
+    @media (max-width: 480px)
+      +flex(center, center)
+      flex-direction: column 
+  &__link
+    margin-right: rem(50px)
+    @media (max-width: 480px)
+      margin-right: 0 
+    &:last-child
+      margin-bottom: 0

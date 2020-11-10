@@ -1,0 +1,62 @@
+extends ../templates/base
+block vars
+  - var title = "Blog"
+block blog
+  .blog__inner
+    h2.blog__title Our Blog
+    p.blog__text.blog__text-line Here's where we address the burning questions. From new tech, creative inspiration and new business wins to movie reviews. It's all here in our journal.
+  .blog__info
+    .blog-info-wrap
+      .blog__info-bg
+        .blog__info-box
+          h3.blog__info-title g+ notifications icon position in Chrome makes me screeaaaaam :)
+          p.blog__info-date December 17, 2014
+      .blog__info-bg
+        .blog__info-box
+          h3.blog__info-title Pointers on Product Development
+          p.blog__info-date August 19, 2014
+      .blog__info-bg
+        .blog__info-box
+          h3.blog__info-title The Art of Vulnerable Development
+          p.blog__info-date July 09, 2014
+      .blog__info-bg
+        .blog__info-box
+          h3.blog__info-title Project Managers - are they the evolutionary “pinkie toe” of development?
+          p.blog__info-date June 19, 2014
+      .blog__info-bg
+        .blog__info-box
+          h3.blog__info-title A New Project Begins...
+          p.blog__info-date May 30, 2014
+      .blog__info-bg
+        .blog__info-box
+          h3.blog__info-title Competition Spirit
+          p.blog__info-date May 27, 2014
+      .blog__info-bg
+        .blog__info-box
+          h3.blog__info-title g+ notifications icon position in Chrome makes me screeaaaaam :)
+          p.blog__info-date December 17, 2014
+      .blog__info-bg
+        .blog__info-box
+          h3.blog__info-title agile. With a little "a".
+          p.blog__info-date May 15, 2014
+      .blog__info-bg
+        .blog__info-box
+          h3.blog__info-title May 13, 2014
+          p.blog__info-date Sun Tzu, Modern Businessman
+      .blog__info-bg
+        .blog__info-box
+          h3.blog__info-title Ideas from Non-Tech Professionals
+          p.blog__info-date May 01, 2014
+    .blog__arrows
+      button.blog__arrow.blog__arrow-left 
+        .blog__arrow-icon.blog__arrow-prev
+          include ../../img/Arrow_Left.svg
+        span.blog__arrow-text Prev
+      button.blog__arrow.blog__arrow-right
+        span.blog__arrow-text Next
+        .blog__arrow-icon.blog__arrow-next
+          include ../../img/Arrow_Right.svg
+block digital
+  .digital__start
+    h2.digital__type.digital__start-title Want to start the conversation?
+    button.btn.digital__start-btn Contact Us

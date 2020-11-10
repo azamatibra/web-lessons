@@ -1,0 +1,63 @@
+extends ../templates/base
+block approach
+  .approach.approach--mb
+    .approach-blog
+block post
+  .post
+    .post__wrap
+      .post__inner
+        .post__date by 
+          span.post__author Cassandra Stish
+          | on December 17, 2014
+        h1.post__heading Project Managers - are they the evolutionary “pinkie toe” of development?
+        h2.post__news First paragraph is autmatically formatted to look like a proper lead. This means that he first sentence or two will be formated like this. Read more to see all the elements and typography showcase.  
+        .post__group
+          p.post__scene This is regular paragraph text. Etiam bibendum pellentesque orci, sed ornare libero iaculis quis. Morbi at felis et massa molestie vulputate vitae non urna. Phasellus augue diam, lacinia id cursus quis, ultricies non sapien. Suspendisse lobortis arcu non molestie commodo.
+          p.post__scene Donec lorem est, porttitor eget elit in, molestie vehicula urna. Nam lobortis, tortor vel pellentesque ullamcorper, urna metus tempus ligula, a malesuada enim libero ut nunc. Donec varius neque quis aliquam euismod. Nam blandit mi et urna tempor, ac tincidunt nibh ullamcorper.
+          p.post__scene Nulla facilisi. Integer tortor ipsum, congue eu risus eu, interdum laoreet sapien. Aenean at consequat risus. 
+            span.post__scene--color Vivamus vestibulum feugiat 
+            | sem vel eleifend. Nam et mi porta, tristique massa et, feugiat odio. Sed turpis sapien, pulvinar non placerat id, auctor at purus. Sed at rutrum elit. Phasellus molestie cursus porttitor. Proin eu adipiscing ante, sit amet tincidunt ligula.
+          h2.post__speech “Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read.” -Groucho Marx
+          p.post__scene Nulla facilisi. Integer tortor ipsum, congue eu risus eu, interdum laoreet sapien. Aenean at consequat risus. Vivamus vestibulum feugiat sem vel eleifend. Nam et mi porta, tristique massa et, feugiat odio. Sed turpis sapien, pulvinar non placerat id, auctor at purus. Sed at rutrum elit. Phasellus molestie cursus porttitor. Proin eu adipiscing ante, sit amet tincidunt ligula.
+      .post__image
+        img(src="img/workshop.jpg" alt="scene")
+      .post__inner
+        .post__group
+          .post__adv
+            h2.post__title This is a subtitle
+            p.post__text Nulla facilisi. Integer tortor ipsum, congue eu risus eu, interdum laoreet sapien. Aenean at consequat risus. Vivamus vestibulum feugiat sem vel eleifend. Nam et mi porta, tristique massa et, feugiat odio. Sed turpis sapien, pulvinar non placerat id, auctor at purus. Sed at rutrum elit. Phasellus molestie cursus porttitor. Proin eu adipiscing ante, sit amet tincidunt ligula.
+          .post__adv
+            h2.post__title This is another subtitle with p text and bulletpoints
+            p.post__text Nulla facilisi. Integer tortor ipsum, congue eu risus eu, interdum laoreet sapien. Aenean at consequat risus. Vivamus vestibulum feugiat sem vel eleifend. Nam et mi porta, tristique massa et, feugiat odio. Sed turpis sapien, pulvinar non placerat id, auctor at purus. Sed at rutrum elit. Phasellus molestie cursus porttitor. Proin eu adipiscing ante, sit amet tincidunt ligula.
+          ul.post__list
+            li.post__item 1. Nam metus turpis, faucibus quis
+            li.post__item 2. Iaculis dignissim nisl lorem ipsum dolor
+            li.post__item 3. Vestibulum eget odio ac ante ornare
+
+          p.post__scene Nulla facilisi. Integer tortor ipsum, congue eu risus eu, interdum laoreet sapien. Aenean at consequat risus. Vivamus vestibulum feugiat sem vel eleifend. Nam et mi porta, tristique massa et, feugiat odio. Sed turpis sapien, pulvinar non placerat id, auctor at purus. Sed at rutrum elit. Phasellus molestie cursus porttitor. Proin eu adipiscing ante, sit amet tincidunt ligula.
+
+          .post__adv
+           h2.post__title What about code?
+           p.post__text Nulla facilisi. Mauris magna purus, auctor id congue sit amet,  
+            span.post__code debugger
+            |   quis lacus. Aliquam faucibus, 
+            span.post__code e.dataTransfer.getData("text")
+            |  elit mauris suscipit massa, egetultrices nunc arcu at eros.
+      .post__inner
+        .blog.post__nav
+          .post__arrow 
+            button.blog__arrow.blog__arrow-left 
+              .blog__arrow-icon.blog__arrow-prev
+                include ../../img/Arrow_Left.svg
+              span.blog__arrow-text Previous Post
+            button.blog__arrow.blog__arrow-right
+              span.blog__arrow-text Next Post
+              .blog__arrow-icon.blog__arrow-next
+                include ../../img/Arrow_Right.svg
+          .post__social
+            a(href="#").post__social-link TweetThis
+            a(href="#").post__social-link FacebookThis
+block digital
+  .digital__start
+    h2.digital__type.digital__start-title Want to start the conversation?
+    button.btn.digital__start-btn Contact Us

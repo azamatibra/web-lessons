@@ -1,0 +1,55 @@
+extends ../templates/base
+block vars
+  - var title = "Contact"
+block contact
+  .contact
+    .contact__wrap
+      .contact__about
+        .container
+          .contact__about-info
+            h2.contact__about-title Let's Talk About You
+            p.contact__about-text If you think we'd be a good fit for your next project or have an idea you'd like to share with us, we'd love to hear all about it.
+          .contact__about-form
+            form.contact__form(action="#")
+              .contact__about-group.contact__about-group-mb
+                input(type="text", name="contact__name", placeholder="Your Name ...").contact__about-input.contact__about-name
+                input(type="email", name="contact__email", placeholder="Your Email ...").contact__about-input.contact__about-email
+              .contact__about-group.contact__about-group-mb
+                textarea(placeholder="Your Message ...", name="contact__message").contact__about-input.contact__about-message
+              button.btn.btn--transparent.contact__about-btn Submit
+      .contact__body
+        .container
+          .contact__body-group
+            h2.contact__body-title Contact Us
+            .contact__body-wrap 
+              .contact__body-box 
+                h3.contact__body-text General Enquiries
+                a(href="mailto:hello@daikatana.com").contact__body-link hello@daikatana.com
+              .contact__body-box 
+                h3.contact__body-text Work Enquiries
+                a(href="mailto:hello@daikatana.com").contact__body-link work@daikatana.com
+              .contact__body-box 
+                h3.contact__body-text Career Enquiries
+                a(href="mailto:hello@daikatana.com").contact__body-link jobs@daikatana.com 
+          .contact__body-group
+            h2.contact__body-title Our Locations
+            .contact__body-wrap 
+              .contact__body-box
+                a(href="mailto:hello@daikatana.com").contact__body-address Charlottesville
+                h3.contact__body-desc Lorem Ipsum 42 Dolor sit Amet N3 Charlottesville, VA 22902
+              .contact__body-box
+                a(href="mailto:hello@daikatana.com").contact__body-address San Francisco 
+                h3.contact__body-desc 972 Dummy Street, 5th Floor San Francisco, CA 94103
+              .contact__body-box
+                a(href="mailto:hello@daikatana.com").contact__body-address Austin
+                h3.contact__body-desc 701 Lorem Ipsum, Suite 1612 #1919 Austin, TX 78701
+block digital
+  .digital__contact
+    h2.digital__contact-title Find Out More
+    .digital__contact-inner
+      button.btn.digital__contact-btn.digital__contact-btn-left Our Approach
+      h3.digital__contact-choice or
+      button.btn.digital__contact-btn.digital__contact-btn-right Our Work
+block map
+  .map
+    img(src="img/map.png", alt="map").map__img

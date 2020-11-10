@@ -1,0 +1,55 @@
+block vars 
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    block title
+      title #{title}
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap")
+    link(rel="stylesheet" href="css/style.css")
+  body
+    .wrapper
+      header.header 
+        .logo.header__logo Dai 
+          span.logo__part Katana
+        button.hamburger.hamburger--spin.header__burger(type="button")
+          span.hamburger-box
+            span.hamburger-inner
+        nav.nav#nav
+          a(href="approach.html", target="_blank").nav__link Our Approach
+          a(href="work.html", target="_blank").nav__link See Our Work
+          a(href="blog.html", target="_blank").nav__link Our Blog
+          a(href="contact.html", target="_blank").btn.header__btn Contact Us
+
+      block approach
+
+      block page-heading
+
+      block hero
+
+      block contact
+
+      block map
+      
+      .blog
+        block blog
+      block work
+
+      block post
+
+      section.digital
+        .container
+          block digital
+
+
+      footer.footer 
+        .container.footer__container
+          .logo.header__logo.footer__logo
+            | Dai 
+            span.logo__part Katana
+          nav.footer__nav
+            a(href="#").nav__link.footer__link Our Blog
+            a(href="#").nav__link.footer__link Facebook
+            a(href="#").nav__link.footer__link Twitter
+    script(src="js/script.js") 

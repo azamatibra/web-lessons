@@ -1,0 +1,22 @@
+.work
+  &-inner
+    @media (max-width: 480px)
+      padding: rem(40px) rem(15px)
+  &-text
+    @media (max-width: 480px) 
+      padding-bottom: 0
+  &__galery
+    max-width: 1920px
+    margin: 0 auto
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(auto-fill, 1fr)
+    @media (max-width: 992px)
+      grid-template-columns: repeat(2, minmax(290px, 1fr))
+    @media (max-width: 580px)
+      grid-template-columns: 1fr
+  &__box
+  &__photo
+    @media (max-width: 580px)
+      max-height: 300px
+      width: 100%
