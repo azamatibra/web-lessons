@@ -1,0 +1,86 @@
+.project
+  padding: rem(120px) 0
+  @media (max-width: 480px) 
+    padding: rem(70px) 0
+  &__wrap
+    +flex(null, space-between)
+    margin-bottom: rem(40px)
+    @media (max-width: 480px)
+      +flex(center,center) 
+      flex-direction: column
+  &__slider
+    color: var(--color-text)
+    & .slick-dots
+      bottom: -20px
+      +flex(center, null)
+      @media (max-width: 768px) 
+        +flex(center, center)
+        bottom: -50px
+      li
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        background-color: var(--awards-dots-color)
+        margin-right: rem(20px)
+        &:last-child
+          margin-right: 0
+        &.slick-active
+          width: 14px
+          height: 14px
+          background-color: var(--color-purple)
+    & .slick-list
+      margin: 0 rem(-30px)
+    & .slick-track .slick-slide
+      margin: 0 rem(30px)
+  &__inner
+    +flex(null, space-between)
+    @media (max-width: 768px)
+      +flex(center, center)
+  &__title
+    font-size: rem(43px)
+    font-weight: 500
+    color: var(--color-base)
+    line-height: 1.3
+    margin-bottom: rem(25px)
+  &__text
+    font-size: rem(22px)
+    line-height: 2
+    margin-bottom: rem(50px)
+    @media (max-width: 992px)
+      font-size: rem(20px)
+      line-height: 1.5
+  &__type
+    padding: rem(10px) rem(22px)
+    display: inline-flex
+    align-items: center
+    background-color: var(--project-color)
+    border-radius: 8px
+    margin-bottom: rem(42px)
+    &-desc
+      font-size: rem(21px)
+    &-icon
+      margin-right: rem(10px)
+    &-svg
+      width: 24px
+      height: 24px
+      fill: var(--arrow-icon)
+  &__more
+    +flex(center, null)
+    @media (max-width: 768px) 
+      justify-content: center
+    &-desc
+      font-size: rem(27px)
+      margin-right: rem(20px)
+  &__info
+    max-width: 503px
+    margin-right: rem(20px)
+    @media (max-width: 992px)
+      max-width: 400px
+    @media (max-width: 768px)
+      max-width: 500px
+      margin-right: 0
+      text-align: center
+  &__img
+    margin-top: rem(80px)
+    @media (max-width: 768px)
+      display: none

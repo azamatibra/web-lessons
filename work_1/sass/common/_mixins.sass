@@ -1,0 +1,17 @@
+@function rem($px)
+  @return $px / $font-size + 0rem
+=flex($aic: null, $js: null)
+  display: flex
+  align-items: $aic
+  justify-content: $js
+=line($x: 0, $y: 0, $bg: var(--line-color), $width: 117px, $height: 5px, $tt: null)
+  position: relative
+  &::after
+    content: ""
+    position: absolute
+    top: $x
+    left:$y
+    width: $width
+    height: $height
+    transform: $tt
+    background-color: $bg

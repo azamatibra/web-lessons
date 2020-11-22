@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Infusion
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Sintony:wght@400;700&display=swap")
+    link(rel="stylesheet", href="css/style.css")
+  body
+    .wrapper
+      include ./mixins/mixin.pug
+      include ./includes/header.pug
+      include ./includes/structure.pug
+      include ./includes/number.pug
+      include ./includes/project.pug
+      include ./includes/service.pug
+      include ./includes/awards.pug
+      include ./includes/news.pug
+      include ./includes/memberships.pug
+      include ./includes/question.pug
+      include ./includes/footer.pug
+
+    script(src="node_modules/jquery/dist/jquery.min.js")
+    script(src="node_modules/wowjs/dist/wow.min.js")
+    script(src="node_modules/slick-slider/slick/slick.min.js")
+    script(src="js/jquery.spincrement.min.js")
+    script(src="js/script.js")

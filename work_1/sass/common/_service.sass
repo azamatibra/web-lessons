@@ -1,0 +1,26 @@
+.service
+  padding: rem(100px) 0 rem(70px) 0
+  background-color: var(--service-bg)
+  &__title
+    margin-bottom: rem(54px)
+  &__text
+    margin-bottom: rem(95px)
+  &__wrap
+    +flex(null, space-between)
+    flex-wrap: wrap
+    @media (max-width: 580px) 
+      +flex(center, center)
+      flex-direction: column
+      text-align: center
+  &__block
+    max-width: 266px
+    margin-bottom: rem(30px)
+    @media (max-width: 580px) 
+      &:last-child
+        margin-bottom: 0
+  &__desc
+    font-size: rem(23px)
+    color: var(--color-text)
+    font-weight: 600
+    line-height: 1.5
+    margin-top: rem(26px)

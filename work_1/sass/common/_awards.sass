@@ -1,0 +1,35 @@
+.awards
+  padding: rem(110px) 0 rem(95px) 0
+  &__title
+    margin-bottom: rem(70px)
+  &__slider
+    & .slick-dots
+      bottom: -50%
+      +flex(center, center)
+      li
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        background-color: var(--awards-dots-color)
+        margin-right: rem(20px)
+        &:last-child
+          margin-right: 0
+        &.slick-active
+          width: 14px
+          height: 14px
+          background-color: var(--color-purple)
+    & .slick-list
+      margin: 0 rem(-70px)
+    & .slick-track .slick-slide
+      margin: 0 rem(70px)
+  &__item
+    min-height: 172px
+    position: relative
+  &__photo
+    position: absolute
+    top: 50%
+    left: 0%
+    transform: translateY(-50%)
+    @media (max-width: 480px)
+      left: 50%
+      transform: translate(-50%, -50%)

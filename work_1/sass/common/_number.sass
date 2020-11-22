@@ -1,0 +1,25 @@
+.number
+  padding: rem(80px) 0 rem(120px) 0
+  background-color: var(--number-bg)
+  @media (max-width: 992px)
+    padding: rem(80px) 0
+  &__wrap
+    +flex(null, space-between)
+    flex-wrap: wrap
+    @media (max-width: 992px)
+      flex-direction: column
+      justify-content: center
+      align-items: center
+  &__title
+    margin-bottom: 86px
+    +line(100%, 0%)
+    @media (max-width: 992px)
+      text-align: center
+      +line(100%, 50%, $tt: translate(-50%, 0))
+  &__count
+    font-size: rem(58px)
+    color: var(--color-purple)
+    &:last-child
+      margin-bottom: 0
+    @media (max-width: 992px)
+      margin-bottom: rem(50px)
