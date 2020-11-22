@@ -352,7 +352,7 @@
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
-  border: none;
+  border: 1px solid transparent;
 }
 
 .slick-arrow.slick-hidden {
@@ -718,7 +718,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.8571428571rem 1.4285714286rem;
+}
+@media (max-width: 580px) {
+  .header__menu {
+    padding: 2.8571428571rem 1.4285714286rem;
+  }
 }
 .header__nav {
   display: flex;
@@ -910,6 +914,10 @@ img {
 
 .logo__icon:hover, .search-icon:hover {
   fill: #bfbfbf;
+}
+
+.slick-vertical .slick-slide {
+  border: none;
 }
 
 .structure {

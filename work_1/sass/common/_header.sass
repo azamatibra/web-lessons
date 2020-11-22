@@ -14,8 +14,8 @@
     padding: rem(40px) rem(40px) rem(40px) rem(18px)
     z-index: 2
     +flex(center, space-between)
-    @media (max-width: 580px) 
-    padding: rem(40px) rem(20px)
+    @media (max-width: 580px)
+      padding: rem(40px) rem(20px)
   &__nav
     +flex(center, null)
     @media (max-width: 992px)
@@ -107,7 +107,7 @@
       +flex(flex-end, flex-end)
       flex-direction: column
       z-index: 1
-      @media (max-width: 992px) 
+      @media (max-width: 992px)
         bottom: 70%
       & li
         width: 10px
@@ -129,7 +129,7 @@
             color: var(--color-transparent)
 .logo
   &__icon
-    transition: .2s 
+    transition: .2s
     fill: var(--color-white)
     width: 106px
     height: 30px
@@ -143,6 +143,8 @@
   width: 24px
   height: 24px
   fill: var(--color-white)
-  
+
 .logo__icon:hover, .search-icon:hover
   fill: darken(#fff, 25%)
+.slick-vertical .slick-slide
+  border: none
