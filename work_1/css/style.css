@@ -610,25 +610,22 @@ img {
 }
 
 @font-face {
+  font-display: swap;
   font-family: "Metropolis";
   src: url("../fonts/Metropolis/Metropolis-Regular.woff2") format("woff2"), url("../fonts/Metropolis/Metropolis-Regular.woff") format("woff");
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
 }
 @font-face {
+  font-display: swap;
   font-family: "Metropolis";
   src: url("../fonts/Metropolis/Metropolis-Medium.woff2") format("woff2"), url("../fonts/Metropolis/Metropolis-Medium.woff") format("woff");
   font-weight: 500;
-  font-style: normal;
-  font-display: swap;
 }
 @font-face {
+  font-display: swap;
   font-family: "Metropolis";
   src: url("../fonts/Metropolis/Metropolis-Bold.woff2") format("woff2"), url("../fonts/Metropolis/Metropolis-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: normal;
-  font-display: swap;
 }
 .wrapper {
   font-family: var(--font-base), sans-serif;
