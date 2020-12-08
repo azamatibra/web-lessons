@@ -20,7 +20,9 @@ header.header
   .slider
     .header__slider
       .header__slide
-        img(src="img/header/header_bg.jpg" alt="slide_1").header__slide-img
+        picture
+          source(type='image/webp' srcset='img/header/header_bg.webp')
+          img(src="img/header/header_bg.jpg" alt="slide_1").header__slide-img
         .header__hero        
           .header__banner
             span.header__text EXPO

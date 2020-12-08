@@ -6,4 +6,6 @@
       svg.structure__icon
         use(xlink:href="sprite/sprite.svg#read_more")
   .structure__img
-    img(src="img/structure/structure_1.jpg", alt="structure").structure__photo
+    picture
+      source(type='image/webp' srcset='img/structure/structure_1.webp')
+      img(src="img/structure/structure_1.jpg", alt="structure").structure__photo
