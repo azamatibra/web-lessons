@@ -20,12 +20,6 @@ $(function () {
       .animate({ scrollTop: $(".service").offset().top }, 1000);
     e.preventDefault();
   });
-
-
-
-
-
-
   $("#header-contact").on("click", function (e) {
     $("html,body")
       .stop()
@@ -38,8 +32,8 @@ $(document).ready(function () {
   $(".header__slider").slick({
     arrows: true,
     dots: true,
-    // autoplay: true,
-    // autoplaySpeed: 15000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     vertical: true,
     verticalSwiping: true,
   });
@@ -48,8 +42,6 @@ $(document).ready(function () {
     dots: true,
     slidesToShow: 4,
     slidesToScroll: 4,
-    // autoplay: true,
-    // autoplaySpeed: 15000,
     responsive: [
       {
         breakpoint: 992,
